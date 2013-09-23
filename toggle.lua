@@ -5,14 +5,14 @@ while true do
 		redstone.setOutput(side, false)
 		if side == "back" then
 			side = "right"
-		else if side == "right" then
+		elseif side == "right" then
 			side = "front"
-		else if side = "front" then
+		elseif side = "front" then
 			side = "left"
-		else if side = "left"
+		elseif side = "left"
 			side = "back"
 		end
 		redstone.setOutput(side, true)
 	end
-	os.sleep(0.5)
+	os.sleep(1)
 end
