@@ -261,16 +261,17 @@ function move(length, dir)
 	rotate(dir)
 	local x = 0
 	while x < length do
-		turtle.forward()
-		x = x + 1
-		if dir == 1 then
-			pos_y = pos_y + 1
-		elseif dir == 3 then
-			pos_y = pos_y - 1
-		elseif dir == 2 then
-			pos_x = pos_x - 1
-		elseif dir == 4 then
-			pos_x = pos_x + 1
+		if turtle.forward() then
+			x = x + 1
+			if dir == 1 then
+				pos_y = pos_y + 1
+			elseif dir == 3 then
+				pos_y = pos_y - 1
+			elseif dir == 2 then
+				pos_x = pos_x - 1
+			elseif dir == 4 then
+				pos_x = pos_x + 1
+			end
 		end
 	end
 	return true
