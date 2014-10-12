@@ -22,7 +22,9 @@ To run the bootstrap type this
 fermis-cc/bootstrap
 ```
 
-harvester.lua
+<h4>Scripts</h4>
+
+<h5>harvester.lua</h5>
 
 This lua script is ment to hover over crops and patroll a field.
 When a crop is grown it will break it and replace it.
