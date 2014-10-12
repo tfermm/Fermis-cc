@@ -70,6 +70,7 @@ crops['convert']["magicalcrops:magicalcrops_MagicCropGold"] = {}
 crops['convert']["magicalcrops:magicalcrops_MagicCropIron"] = {}
 crops['convert']["magicalcrops:magicalcrops_MagicCropLapis"] = {}
 crops['convert']["magicalcrops:magicalcrops_MagicCropNether"] = {}
+crops['convert']["magicalcrops:magicalcrops_MagicCropRedstone"] = {}
 crops['convert']["magicalcrops:magicalcrops_ModMagicCropRubber"] = {}
 crops['convert']["magicalcrops:magicalcrops_ModMagicCropQuartz"] = {}
 crops['convert']["magicalcrops:magicalcrops_ElementCropEarth"] = {}
@@ -86,6 +87,7 @@ crops['convert']["magicalcrops:magicalcrops_MagicCropGold"]['seed'] = "magicalcr
 crops['convert']["magicalcrops:magicalcrops_MagicCropIron"]['seed'] = "magicalcrops:magicalcrops_MagicSeedsIron"
 crops['convert']["magicalcrops:magicalcrops_MagicCropLapis"]['seed'] = "magicalcrops:magicalcrops_MagicSeedsLapis"
 crops['convert']["magicalcrops:magicalcrops_MagicCropNether"]['seed'] = "magicalcrops:magicalcrops_MagicSeedsNether"
+crops['convert']["magicalcrops:magicalcrops_MagicCropRedstone"]['seed'] = "magicalcrops:magicalcrops_MagicSeedsRedstone"
 crops['convert']["magicalcrops:magicalcrops_ModMagicCropRubber"]['seed'] = "magicalcrops:magicalcrops_ModMagicSeedsRubber"
 crops['convert']["magicalcrops:magicalcrops_ModMagicCropQuartz"]['seed'] = "magicalcrops:magicalcrops_ModMagicSeedsQuartz"
 crops['convert']["magicalcrops:magicalcrops_ElementCropEarth"]['seed'] = "magicalcrops:magicalcrops_ElementSeedsEarth"
@@ -101,6 +103,7 @@ crops['convert']["magicalcrops:magicalcrops_MagicCropGold"]['damage'] = 5
 crops['convert']["magicalcrops:magicalcrops_MagicCropIron"]['damage'] = 4
 crops['convert']["magicalcrops:magicalcrops_MagicCropLapis"]['damage'] = 6
 crops['convert']["magicalcrops:magicalcrops_MagicCropNether"]['damage'] = 14
+crops['convert']["magicalcrops:magicalcrops_MagicCropRedstone"]['damage'] = 1 
 crops['convert']["magicalcrops:magicalcrops_ModMagicCropRubber"]['damage'] = 17
 crops['convert']["magicalcrops:magicalcrops_ModMagicCropQuartz"]['damage'] = 4
 crops['convert']["magicalcrops:magicalcrops_ElementCropEarth"]['damage'] = 2
@@ -116,13 +119,12 @@ crops['convert']["magicalcrops:magicalcrops_MagicCropGold"]['name'] = "magicalcr
 crops['convert']["magicalcrops:magicalcrops_MagicCropIron"]['name'] = "magicalcrops:magicalcrops_CropEssence"
 crops['convert']["magicalcrops:magicalcrops_MagicCropLapis"]['name'] = "magicalcrops:magicalcrops_CropEssence"
 crops['convert']["magicalcrops:magicalcrops_MagicCropNether"]['name'] = "magicalcrops:magicalcrops_CropEssence"
+crops['convert']["magicalcrops:magicalcrops_MagicCropRedstone"]['name'] = "magicalcrops:magicalcrops_CropEssence"
 crops['convert']["magicalcrops:magicalcrops_ModMagicCropRubber"]['name'] = "magicalcrops:magicalcrops_ModCropEssence"
 crops['convert']["magicalcrops:magicalcrops_ModMagicCropQuartz"]['name'] = "magicalcrops:magicalcrops_ModCropEssence"
 crops['convert']["magicalcrops:magicalcrops_ElementCropEarth"]['name'] = "magicalcrops:magicalcrops_ElementCropEssence"
 crops['convert']["magicalcrops:magicalcrops_ElementCropWater"]['name'] = "magicalcrops:magicalcrops_ElementCropEssence"
 crops['convert']["magicalcrops:magicalcrops_SoulCropGhast"]['name'] = "magicalcrops:magicalcrops_SoulCropEssence"
--- quartz damage 4
--- iron damage 4
 
 function isEmpty(a)
 	if (a == nil or a == '') then
