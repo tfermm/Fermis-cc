@@ -11,6 +11,9 @@ bootstrapConnection.close()
 bootstrap.close()
 
 bootstrap = fs.open("/fermis-cc/bootstrap", "w")
+bootstrapConnection = http.get("https://raw.githubusercontent.com/tfermm/Fermis-cc/master/bootstrap.lua")
+
+bootstrap = fs.open("/fermis-cc/harvester", "w")
 bootstrapConnection = http.get("https://raw.githubusercontent.com/tfermm/Fermis-cc/master/harvester.lua")
 
 bootstrap.write(bootstrapConnection.readAll())
