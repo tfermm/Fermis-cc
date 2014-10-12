@@ -1,5 +1,4 @@
-<h1>Getting Started</h1>
-<br>
+<h2>Getting Started</h2>
 <br>
 <p>Right click your turtle<br>
 type without quotes "lua"<br>
@@ -30,10 +29,11 @@ Magical Crops
 Minecraft Crops
 
 TODO:
-Finish adding in Magical crops seeds into the whitelist
-make whitelist configurable
-finish adding in minecraft seeds
-format this read me stuff
-
-**Known bugs**
+<ul>
+<li>Finish adding in Magical crops seeds into the whitelist</li>
+<li>make whitelist configurable</li>
+<li>finish adding in minecraft seeds</li>
+<li>format this read me stuff</li>
+</ul>
+<h2>Known bugs</h2>
 When the turtle goes over a non-whitelisted item the program crashes
