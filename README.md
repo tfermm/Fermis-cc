@@ -1,4 +1,21 @@
-Just some computercraft things
+
+Getting Started
+
+Right click your turtle
+type without quotes "lua"
+
+Take the following lines and copy paste them into the turtle one by one then press enter
+
+fs.makeDir("/fermis-cc")
+bootstrap = fs.open("/fermis-cc/bootstrap", "w")
+bootstrapConnection = http.get("https://raw.githubusercontent.com/tfermm/Fermis-cc/master/bootstrab.lua")
+bootstrap.write(bootstrapConnection.readAll())
+bootstrapConnection.close()
+bootstrap.close()
+
+type without quotes "fermis-cc/bootstrap"
+This will grab any and all of the lua files I have here and will put them on your turtle
+They will be in the fermis-cc directory
 
 harvester.lua
 
@@ -16,6 +33,7 @@ TODO:
 Finish adding in Magical crops seeds into the whitelist
 make whitelist configurable
 finish adding in minecraft seeds
+format this read me stuff
 
 **Known bugs**
 When the turtle goes over a non-whitelisted item the program crashes
