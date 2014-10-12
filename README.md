@@ -10,10 +10,17 @@ bootstrapConnection = http.get("https://raw.githubusercontent.com/tfermm/Fermis-
 bootstrap.write(bootstrapConnection.readAll())
 bootstrapConnection.close()
 bootstrap.close()
+exit()
 ```
-type without quotes "fermis-cc/bootstrap"
-This will grab any and all of the lua files I have here and will put them on your turtle
-They will be in the fermis-cc directory
+What the bootstrap does
+
+The bootstrap will grab any and all of the lua files I have in GitHub and will put them on your turtle in the fermis-cc directory
+
+To run the bootstrap type this
+
+```lua
+fermis-cc/bootstrap
+```
 
 harvester.lua
 
