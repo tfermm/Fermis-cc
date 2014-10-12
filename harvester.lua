@@ -139,7 +139,7 @@ function populate_metadata()
 	if success then
 		turtle_meta = metadata['metadata']
 		current_crop =  metadata['name']
-		if in_whitelist(crops['convert'][current_crop]['seed']) then
+		if pcall(in_whitelist,current_crop) then
 			current_seed = crops['convert'][current_crop]['seed']
 			return success, metadata
 		else
@@ -150,8 +150,8 @@ function populate_metadata()
 	end
 end
 
-function in_whitelist()
-	if pcall(crops['convert'][current_crop]['seed']) then
+function in_whitelist(current_crop)
+	if crops['convert'][current_crop]['seed'] then
 		return true
 	else
 		return false
