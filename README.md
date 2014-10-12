@@ -1,6 +1,4 @@
-<h1>Getting Started</h1>
-<br>
-<br>
+<h4>Getting Started</h4>
 <p>Right click your turtle<br>
 type without quotes "lua"<br>
 <br>
@@ -12,12 +10,24 @@ bootstrapConnection = http.get("https://raw.githubusercontent.com/tfermm/Fermis-
 bootstrap.write(bootstrapConnection.readAll())
 bootstrapConnection.close()
 bootstrap.close()
+exit()
 ```
-type without quotes "fermis-cc/bootstrap"
-This will grab any and all of the lua files I have here and will put them on your turtle
-They will be in the fermis-cc directory
+What the bootstrap does
 
-harvester.lua
+The bootstrap will grab any and all of the lua files I have in GitHub and will put them on your turtle in the fermis-cc directory
+
+To run the bootstrap type this
+
+```lua
+fermis-cc/bootstrap
+```
+
+<h4>Scripts</h4>
+
+<h5>harvester</h5>
+
+harvester.lua on github 
+harvester on your turtle
 
 This lua script is ment to hover over crops and patroll a field.
 When a crop is grown it will break it and replace it.
@@ -29,11 +39,12 @@ Supported seeds:
 Magical Crops
 Minecraft Crops
 
-TODO:
-Finish adding in Magical crops seeds into the whitelist
-make whitelist configurable
-finish adding in minecraft seeds
-format this read me stuff
-
-**Known bugs**
+<h4>TODO:</h4>
+<ul>
+<li>Finish adding in Magical crops seeds into the whitelist</li>
+<li>make whitelist configurable</li>
+<li>finish adding in minecraft seeds</li>
+<li>format this read me stuff</li>
+</ul>
+<h4>Known bugs</h4>
 When the turtle goes over a non-whitelisted item the program crashes
