@@ -1,6 +1,6 @@
 
 fs.makeDir("/fermis-cc")
-bootstrap = fs.open("/fermis-cc/bootstrap", "w")
+bootstrap = fs.open("/fermis-cc/bootstrap", "w+")
 bootstrapConnection = http.get("https://raw.githubusercontent.com/tfermm/Fermis-cc/master/bootstrab.lua")
 
 assert(bootstrap, "Unable to save installer to disk! Please make sure your in-game computer has space available and try again!")
@@ -10,14 +10,11 @@ bootstrap.write(bootstrapConnection.readAll())
 bootstrapConnection.close()
 bootstrap.close()
 
-bootstrap = fs.open("/fermis-cc/bootstrap", "w")
-bootstrapConnection = http.get("https://raw.githubusercontent.com/tfermm/Fermis-cc/master/bootstrap.lua")
+harvester = fs.open("/fermis-cc/harvester", "w")
+harvesterConnection = http.get("https://raw.githubusercontent.com/tfermm/Fermis-cc/master/harvester.lua")
 
-bootstrap = fs.open("/fermis-cc/harvester", "w")
-bootstrapConnection = http.get("https://raw.githubusercontent.com/tfermm/Fermis-cc/master/harvester.lua")
-
-bootstrap.write(bootstrapConnection.readAll())
-bootstrapConnection.close()
-bootstrap.close()
+harvester.write(harvesterConnection.readAll())
+harvesterConnection.close()
+harvester.close()
 
 
