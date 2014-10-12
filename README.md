@@ -24,7 +24,10 @@ fermis-cc/bootstrap
 
 <h4>Scripts</h4>
 
-<h5>harvester.lua</h5>
+<h5>harvester</h5>
+
+harvester.lua on github 
+harvester on your turtle
 
 This lua script is ment to hover over crops and patroll a field.
 When a crop is grown it will break it and replace it.
