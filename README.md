@@ -34,9 +34,9 @@ When a crop is grown it will break it and replace it.
 
 There is a list of crops the turtle will harvest currently hard coded in.
 
-Supported seeds:
+<h4>Supported seeds</h4>
 
-Magical Crops
+<h5>Magical Crops<h5>
 <ul>
 <li>Coal</li>
 <li>Diamond</li>
@@ -55,7 +55,7 @@ Magical Crops
 <li>Ghast Soul</li>
 </ul>
 
-Minecraft Crops
+<h5>Minecraft Crops</h5>
 <ul>
 <li>Wheat</li>
 </ul>
@@ -63,9 +63,10 @@ Minecraft Crops
 <h4>TODO:</h4>
 <ul>
 <li>Finish adding in Magical crops seeds into the whitelist</li>
-<li>make whitelist configurable</li>
-<li>finish adding in minecraft seeds</li>
-<li>format this read me stuff</li>
+<li>Finish adding in minecraft seeds</li>
+<li>Keep certain amounts of minecraft seeds in the turtles inventory</li>
+<li>Make whitelist configurable</li>
+<li>Format this read me stuff</li>
 </ul>
 <h4>Known bugs</h4>
-When the turtle goes over a non-whitelisted item the program crashes
+Currently no known bugs
