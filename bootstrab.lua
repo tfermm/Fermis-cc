@@ -1,6 +1,6 @@
 
 fs.makeDir("/fermis-cc")
-bootstrap = fs.open("/fermis-cc/bootstrap", "w+")
+bootstrap = fs.open("/fermis-cc/bootstrap", "w")
 bootstrapConnection = http.get("https://raw.githubusercontent.com/tfermm/Fermis-cc/master/bootstrab.lua")
 
 assert(bootstrap, "Unable to save installer to disk! Please make sure your in-game computer has space available and try again!")
