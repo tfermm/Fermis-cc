@@ -45,13 +45,22 @@ Magical Crops
 <li>Glowstone</li>
 <li>Gold</li>
 <li>Iron</li>
-<li></li>
+<li>Lapis</li>
+<li>Nether</li>
+<li>Redstone</li>
+<li>Rubber</li>
+<li>Uranium</li>
+<li>Quartz</li>
+<li>Earth</li>
+<li>Water</li>
+<li>Ghast Soul</li>
 </ul>
 
 Minecraft Crops
 <ul>
 <li>Wheat</li>
 </ul>
+
 <h4>TODO:</h4>
 <ul>
 <li>Finish adding in Magical crops seeds into the whitelist</li>
