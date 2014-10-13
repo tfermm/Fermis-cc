@@ -1,6 +1,5 @@
 <h4>Getting Started</h4>
 <p>Right click your turtle<br>
-<br>
 Take the following lines and copy paste them into the turtle one by one then press enter<br></p>
 ```lua
 lua
