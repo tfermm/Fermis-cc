@@ -62,6 +62,7 @@ There is a list of crops the turtle will harvest currently hard coded in.
 
 <h4>TODO:</h4>
 <ul>
+<li>Add fuel capabilities to the turtle</li>
 <li>Finish adding in Magical crops seeds into the whitelist</li>
 <li>Finish adding in minecraft seeds</li>
 <li>Keep certain amounts of minecraft seeds in the turtles inventory</li>
