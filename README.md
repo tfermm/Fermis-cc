@@ -36,7 +36,7 @@ There is a list of crops the turtle will harvest currently hard coded in.
 
 <h4>Supported seeds</h4>
 
-<h5>Magical Crops<h5>
+<h5>Magical Crops</h5>
 <ul>
 <li>Coal</li>
 <li>Diamond</li>
