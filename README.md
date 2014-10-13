@@ -38,21 +38,21 @@ There is a list of crops the turtle will harvest currently hard coded in.
 
 <h5>Magical Crops</h5>
 <ul>
-<li>Coal</li>
-<li>Diamond</li>
-<li>Ender</li>
-<li>Glowstone</li>
-<li>Gold</li>
-<li>Iron</li>
-<li>Lapis</li>
-<li>Nether</li>
-<li>Redstone</li>
-<li>Rubber</li>
-<li>Uranium</li>
-<li>Quartz</li>
-<li>Earth</li>
-<li>Water</li>
-<li>Ghast Soul</li>
+	<li>Coal</li>
+	<li>Diamond</li>
+	<li>Ender</li>
+	<li>Glowstone</li>
+	<li>Gold</li>
+	<li>Iron</li>
+	<li>Lapis</li>
+	<li>Nether</li>
+	<li>Redstone</li>
+	<li>Rubber</li>
+	<li>Uranium</li>
+	<li>Quartz</li>
+	<li>Earth</li>
+	<li>Water</li>
+	<li>Ghast Soul</li>
 </ul>
 
 <h5>Minecraft Crops</h5>
@@ -62,12 +62,13 @@ There is a list of crops the turtle will harvest currently hard coded in.
 
 <h4>TODO:</h4>
 <ul>
-<li>Add fuel capabilities to the turtle</li>
-<li>Finish adding in Magical crops seeds into the whitelist</li>
-<li>Finish adding in minecraft seeds</li>
-<li>Keep certain amounts of minecraft seeds in the turtles inventory</li>
-<li>Make whitelist configurable</li>
-<li>Format this read me stuff</li>
+	<li>Add fuel capabilities to the turtle</li>
+	<li>Make deposit spot configurable</li>
+	<li>Finish adding in Magical crops seeds into the whitelist</li>
+	<li>Finish adding in minecraft seeds</li>
+	<li>Keep certain amounts of minecraft seeds in the turtles inventory</li>
+	<li>Make whitelist configurable</li>
+	<li>Format this read me stuff</li>
 </ul>
 <h4>Known bugs</h4>
 Currently no known bugs

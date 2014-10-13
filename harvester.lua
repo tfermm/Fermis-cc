@@ -21,7 +21,7 @@ direction = 1
 -- 2 is facing right 
 -- 3 is opposite of 1, facing behind the origional direction
 -- 4 is facing left
-
+--[[
 seeds = {}
 seeds['coal'] = "magicalcrops:magicalcrops_MagicSeedsCoal"
 seeds['diamond'] = "magicalcrops:magicalcrops_MagicSeedsDiamond"
@@ -53,7 +53,7 @@ plants['earth'] = "magicalcrops:magicalcrops_ElementCropEarth"
 plants['water'] = "magicalcrops:magicalcrops_ElementCropWater"
 
 plants['ghast'] = "magicalcrops:magicalcrops_SoulCropGhast"
-
+--]]
 crops = {}
 
 crops['seeds'] = seeds
@@ -353,6 +353,7 @@ end
 
 -- returns to the starting position and deposits the inventory
 function deposit_inv()
+	-- TODO make deposit spot configurable 
 	-- save all information related to our position
 	local return_x = pos_x
 	local return_y = pos_y
