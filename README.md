@@ -26,13 +26,9 @@ To run the harvester right click your turtle and type in the following
 fermis-cc/harvester
 ```
 
-harvester.lua on github 
-
-<h6>Desctiption</h6>
+<h6>Description</h6>
 This lua script is ment to hover over crops and patroll a field.
 When a crop is grown it will break it and replace it.
-
-There is a list of crops the turtle will harvest currently hard coded in.
 
 <h4>Supported seeds</h4>
 
