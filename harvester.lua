@@ -1,6 +1,6 @@
 -- global vars
-length = 38
-width = 25
+length = 3
+width = 9
 start_pos_x = 0 
 start_pos_y = -1
 pos_x = start_pos_x
