@@ -8,7 +8,9 @@ pos_y = start_pos_y
 turtle_meta = {}
 current_seed = ""
 current_plant = ""
-
+reverse_dir = 0
+-- default the turtle clears forward and to the left
+-- with reverse_dir it will mirror on the other side
 
 north = 1
 east = 2
@@ -21,39 +23,7 @@ direction = 1
 -- 2 is facing right 
 -- 3 is opposite of 1, facing behind the origional direction
 -- 4 is facing left
---[[
-seeds = {}
-seeds['coal'] = "magicalcrops:magicalcrops_MagicSeedsCoal"
-seeds['diamond'] = "magicalcrops:magicalcrops_MagicSeedsDiamond"
-seeds['gold'] = "magicalcrops:magicalcrops_MagicSeedsGold"
-seeds['iron'] = "magicalcrops:magicalcrops_MagicSeedsIron"
-seeds['lapis'] = "magicalcrops:magicalcrops_MagicSeedsLapis"
-seeds['nether'] = "magicalcrops:magicalcrops_MagicSeedsNether"
 
-seeds['rubber'] = "magicalcrops:magicalcrops_ModMagicSeedsRubber"
-seeds['quartz'] = "magicalcrops:magicalcrops_ModMagicSeedsQuartz"
-
-seeds['earth'] = "magicalcrops:magicalcrops_ElementSeedsEarth"
-seeds['water'] = "magicalcrops:magicalcrops_ElementSeedsWater"
-
-seeds['ghast'] = "magicalcrops:magicalcrops_SoulSeedsGhast"
-
-plants = {}
-plants['coal'] = "magicalcrops:magicalcrops_MagicCropCoal"
-plants['diamond'] = "magicalcrops:magicalcrops_MagicCropDiamond"
-plants['gold'] = "magicalcrops:magicalcrops_MagicCropGold"
-plants['iron'] = "magicalcrops:magicalcrops_MagicCropIron"
-plants['lapis'] = "magicalcrops:magicalcrops_MagicCropLapis"
-plants['nether'] = "magicalcrops:magicalcrops_MagicCropNether"
-
-plants['rubber'] = "magicalcrops:magicalcrops_ModMagicCropRubber"
-plants['quartz'] = "magicalcrops:magicalcrops_ModMagicCropQuartz"
-
-plants['earth'] = "magicalcrops:magicalcrops_ElementCropEarth"
-plants['water'] = "magicalcrops:magicalcrops_ElementCropWater"
-
-plants['ghast'] = "magicalcrops:magicalcrops_SoulCropGhast"
---]]
 crops = {}
 
 crops['seeds'] = seeds
@@ -299,30 +269,58 @@ end
 
 function auto_move()
 	-- check position to see if it needs to go to the next row or return to the start
-	if pos_y == length - 1 and direction == north then
-		if pos_x == width - 1 then
-			-- return to the start
-			move(pos_x, east)
-			move(pos_y, south)
-			rotate(south)
-		else
-			-- turn around
-			if direction == 1 then
-				move(1,west)
+	if reverse_dir == 0 then
+		if pos_y == length - 1 and direction == north then
+			if pos_x == width - 1 then
+				-- return to the start
+				move(pos_x, east)
+				move(pos_y, south)
 				rotate(south)
+			else
+				-- turn around
+				if direction == 1 then
+					move(1,west)
+					rotate(south)
+				end
 			end
-		end
-	elseif pos_y == 0 and direction == south then
-		if pos_x == width - 1 then
-			-- return to start
-			move(pos_x, east)
-			rotate(north)
+		elseif pos_y == 0 and direction == south then
+			if pos_x == width - 1 then
+				-- return to start
+				move(pos_x, east)
+				rotate(north)
+			else
+				move(1,west)
+				rotate(north)
+			end
 		else
-			move(1,west)
-			rotate(north)
+			move(1,direction)
 		end
 	else
-		move(1,direction)
+		if pos_y == length - 1 and direction == north then
+			if pos_x == width - 1 then
+				-- return to the start
+				move(pos_x, east)
+				move(pos_y, south)
+				rotate(south)
+			else
+				-- turn around
+				if direction == 1 then
+					move(1,west)
+					rotate(south)
+				end
+			end
+		elseif pos_y == 0 and direction == south then
+			if pos_x == width - 1 then
+				-- return to start
+				move(pos_x, east)
+				rotate(north)
+			else
+				move(1,west)
+				rotate(north)
+			end
+		else
+			move(1,direction)
+		end
 	end
 end
 
@@ -364,19 +362,35 @@ function deposit_inv()
 	local return_y = pos_y
 	local return_direction = direction
 
-	-- return to (0,0)
-	move(pos_x, east)
-	move(pos_y, south)
+	if reverse_dir == 0 then
+		-- return to (0,0)
+		move(pos_x, east)
+		move(pos_y, south)
 
-	-- go one down to chest location
-	move(1, south)
-	empty_inv("down")
+		-- go one down to chest location
+		move(1, south)
+		empty_inv("down")
 
-	-- return to the spot where we started
-	move(1,1)
-	move(return_x, west)
-	move(return_y, north)
-	rotate(return_direction)
+		-- return to the spot where we started
+		move(1,1)
+		move(return_x, west)
+		move(return_y, north)
+		rotate(return_direction)
+	else
+		-- return to (0,0)
+		move(pos_x, west)
+		move(pos_y, south)
+
+		-- go one down to chest location
+		move(1, south)
+		empty_inv("down")
+
+		-- return to the spot where we started
+		move(1,1)
+		move(return_x, east)
+		move(return_y, north)
+		rotate(return_direction)
+	end
 end
 
 local run_it = true
