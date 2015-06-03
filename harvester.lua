@@ -49,6 +49,7 @@ crops['convert']["magicalcrops:magicalcrops_ElementCropEarth"] = {}
 crops['convert']["magicalcrops:magicalcrops_ElementCropWater"] = {}
 crops['convert']["magicalcrops:magicalcrops_MagicCropEssence"] = {}
 crops['convert']["magicalcrops:magicalcrops_SoulCropGhast"] = {}
+crops['convert']["magicalcrops:magicalcrops_SoulCropSlime"] = {}
 
  
 
@@ -70,6 +71,7 @@ crops['convert']["magicalcrops:magicalcrops_ElementCropEarth"]['seed'] = "magica
 crops['convert']["magicalcrops:magicalcrops_ElementCropWater"]['seed'] = "magicalcrops:magicalcrops_ElementSeedsWater"
 crops['convert']["magicalcrops:magicalcrops_MagicCropEssence"]['seed'] = "magicalcrops:magicalcrops_MagicSeedsEssence"
 crops['convert']["magicalcrops:magicalcrops_SoulCropGhast"]['seed'] = "magicalcrops:magicalcrops_SoulSeedsGhast"
+crops['convert']["magicalcrops:magicalcrops_SoulCropSlime"]['seed'] = "magicalcrops:magicalcrops_SoulSeedsSlime"
 
 crops['convert']["minecraft:wheat"]['damage'] = 0
 crops['convert']["magicalcrops:magicalcrops_MagicCropCoal"]['damage'] = 11
@@ -89,6 +91,7 @@ crops['convert']["magicalcrops:magicalcrops_ElementCropWater"]['damage'] = 0
 crops['convert']["magicalcrops:magicalcrops_MagicCropEssence"]['damage'] = 7
 crops['convert']["magicalcrops:magicalcrops_MagicCropObsidian"]['damage'] = 7
 crops['convert']["magicalcrops:magicalcrops_SoulCropGhast"]['damage'] = 6
+crops['convert']["magicalcrops:magicalcrops_SoulCropSlime"]['damage'] = 7
 
 crops['convert']["minecraft:wheat"]['name'] = "minecraft:wheat"
 crops['convert']["magicalcrops:magicalcrops_MagicCropCoal"]['name'] = "magicalcrops:magicalcrops_MagicCropCoal"
@@ -108,6 +111,7 @@ crops['convert']["magicalcrops:magicalcrops_ModMagicCropQuartz"]['name'] = "magi
 crops['convert']["magicalcrops:magicalcrops_ElementCropEarth"]['name'] = "magicalcrops:magicalcrops_ElementCropEarth"
 crops['convert']["magicalcrops:magicalcrops_ElementCropWater"]['name'] = "magicalcrops:magicalcrops_ElementCropWater" 
 crops['convert']["magicalcrops:magicalcrops_SoulCropGhast"]['name'] = "magicalcrops:magicalcrops_SoulCropGhast"
+crops['convert']["magicalcrops:magicalcrops_SoulCropSlime"]['name'] = "magicalcrops:magicalcrops_SoulCropSlime"
 
 function isEmpty(a)
 	if (a == nil or a == '') then
