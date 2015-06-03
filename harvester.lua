@@ -43,6 +43,7 @@ crops['convert']["magicalcrops:magicalcrops_MagicCropNether"] = {}
 crops['convert']["magicalcrops:magicalcrops_MagicCropRedstone"] = {}
 crops['convert']["magicalcrops:magicalcrops_ModMagicCropRubber"] = {}
 crops['convert']["magicalcrops:magicalcrops_ModMagicCropUranium"] = {}
+crops['convert']["magicalcrops:magicalcrops_MagicCropObsidian"] = {}
 crops['convert']["magicalcrops:magicalcrops_ModMagicCropQuartz"] = {}
 crops['convert']["magicalcrops:magicalcrops_ElementCropEarth"] = {}
 crops['convert']["magicalcrops:magicalcrops_ElementCropWater"] = {}
