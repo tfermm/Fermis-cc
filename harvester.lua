@@ -251,6 +251,11 @@ function move(length, dir)
 	local x = 0
 	if reverse_dir == 0 then
 		while x < length do
+			if full == false
+				if break_plant() then
+					plant_seed()
+				end
+			end
 			if turtle.forward() then
 				x = x + 1
 				if dir == 1 then
@@ -266,6 +271,11 @@ function move(length, dir)
 		end
 	else
 		while x < length do
+			if full == false
+				if break_plant() then
+					plant_seed()
+				end
+			end
 			if turtle.forward() then
 				x = x + 1
 				if dir == 1 then
@@ -413,10 +423,13 @@ end
 local run_it = true
 local var_test = 0
 local slots_open = 16
+local full = false
 while run_it do
 	slots_open = inv_free()
 	if slots_open > -1 and slots_open < 2 then
+		full = true
 		deposit_inv()
+		full = false
 	end
 	auto_move()
 	if break_plant() then
