@@ -251,7 +251,7 @@ function move(length, dir)
 	local x = 0
 	if reverse_dir == 0 then
 		while x < length do
-			if full == false
+			if full == false then
 				if break_plant() then
 					plant_seed()
 				end
@@ -271,7 +271,7 @@ function move(length, dir)
 		end
 	else
 		while x < length do
-			if full == false
+			if full == false then
 				if break_plant() then
 					plant_seed()
 				end
