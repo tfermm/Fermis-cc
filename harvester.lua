@@ -152,10 +152,7 @@ function break_plant()
 	success, metadata = populate_metadata()
 	if success then
 		if crop_is_grown() then
-			local inv_spot = best_inv_slot()
-			if inv_spot ~= -1 then
-				turtle.select(inv_spot)
-			end
+			turtle.select(1)
 			turtle.digDown()
 			return true
 		end
@@ -196,22 +193,6 @@ function locate_seed()
 		end
 	end
 	return false
-end
-
-
-function best_inv_slot()
-	if true then
-		return 1
-	end
-	for i = 1,16,1 do
-		item_details = turtle.getItemDetail(i)	
-		if not isEmpty(item_details) then
-			if crops['convert'][current_crop]['damage'] == item_details['damage'] and crops['convert'][current_crop]['name']== item_details['name'] then
-				return i
-			end
-		end
-	end
-	return -1
 end
 
 -- direction is 1 - 4
