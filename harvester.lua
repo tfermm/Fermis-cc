@@ -8,7 +8,7 @@ pos_y = start_pos_y
 turtle_meta = {}
 current_seed = ""
 current_plant = ""
-reverse_dir = 0
+reverse_dir = 1
 -- default the turtle clears forward and to the left
 -- with reverse_dir it will mirror on the other side
 
@@ -299,23 +299,23 @@ function auto_move()
 		if pos_y == length - 1 and direction == north then
 			if pos_x == width - 1 then
 				-- return to the start
-				move(pos_x, east)
+				move(pos_x, west)
 				move(pos_y, south)
 				rotate(south)
 			else
 				-- turn around
 				if direction == 1 then
-					move(1,west)
+					move(1,east)
 					rotate(south)
 				end
 			end
 		elseif pos_y == 0 and direction == south then
 			if pos_x == width - 1 then
 				-- return to start
-				move(pos_x, east)
+				move(pos_x, west)
 				rotate(north)
 			else
-				move(1,west)
+				move(1,east)
 				rotate(north)
 			end
 		else
