@@ -200,8 +200,10 @@ end
 
 
 function best_inv_slot()
-	for i = 1,16,1 do
+	if true then
 		return 1
+	end
+	for i = 1,16,1 do
 		item_details = turtle.getItemDetail(i)	
 		if not isEmpty(item_details) then
 			if crops['convert'][current_crop]['damage'] == item_details['damage'] and crops['convert'][current_crop]['name']== item_details['name'] then
