@@ -49,11 +49,12 @@ When a crop is grown it will break it and replant it.
 	<li>Earth</li>
 	<li>Water</li>
 	<li>Ghast Soul</li>
+	<li>Essence</li>
 </ul>
 
 <h5>Minecraft Crops</h5>
 <ul>
-<li>Wheat</li>
+	<li>Wheat</li>
 </ul>
 
 <h4>TODO:</h4>
