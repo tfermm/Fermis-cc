@@ -8,7 +8,7 @@ pos_y = start_pos_y
 turtle_meta = {}
 current_seed = ""
 current_plant = ""
-reverse_dir = 1
+reverse_dir = 0
 -- default the turtle clears forward and to the left
 -- with reverse_dir it will mirror on the other side
 
@@ -249,17 +249,34 @@ end
 function move(length, dir)
 	rotate(dir)
 	local x = 0
-	while x < length do
-		if turtle.forward() then
-			x = x + 1
-			if dir == 1 then
-				pos_y = pos_y + 1
-			elseif dir == 3 then
-				pos_y = pos_y - 1
-			elseif dir == 2 then
-				pos_x = pos_x - 1
-			elseif dir == 4 then
-				pos_x = pos_x + 1
+	if reverse_dir == 0 then
+		while x < length do
+			if turtle.forward() then
+				x = x + 1
+				if dir == 1 then
+					pos_y = pos_y + 1
+				elseif dir == 3 then
+					pos_y = pos_y - 1
+				elseif dir == 2 then
+					pos_x = pos_x - 1
+				elseif dir == 4 then
+					pos_x = pos_x + 1
+				end
+			end
+		end
+	else
+		while x < length do
+			if turtle.forward() then
+				x = x + 1
+				if dir == 1 then
+					pos_y = pos_y + 1
+				elseif dir == 3 then
+					pos_y = pos_y - 1
+				elseif dir == 2 then
+					pos_x = pos_x + 1
+				elseif dir == 4 then
+					pos_x = pos_x - 1
+				end
 			end
 		end
 	end
