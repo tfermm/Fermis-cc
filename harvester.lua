@@ -251,7 +251,7 @@ function move(length, dir)
 	local x = 0
 	if reverse_dir == 0 then
 		while x < length do
-			if full == false then
+			if is_full() == false then
 				if break_plant() then
 					plant_seed()
 				end
@@ -271,7 +271,7 @@ function move(length, dir)
 		end
 	else
 		while x < length do
-			if full == false then
+			if is_full() == false then
 				if break_plant() then
 					plant_seed()
 				end
@@ -420,16 +420,24 @@ function deposit_inv()
 	end
 end
 
+function is_full()
+	local full_1 = false
+	local slots_open_1 = inv_free()
+	if slots_open_1 > -1 and slots_open_1 < 2 then
+		full_1 = true
+	end
+	return full_1
+end
+
 local run_it = true
 local var_test = 0
 local slots_open = 16
-local full = false
+
 while run_it do
-	slots_open = inv_free()
-	if slots_open > -1 and slots_open < 2 then
-		full = true
+	-- slots_open = inv_free()
+	-- if slots_open > -1 and slots_open < 2 then
+	if is_full() == true then
 		deposit_inv()
-		full = false
 	end
 	auto_move()
 	if break_plant() then
