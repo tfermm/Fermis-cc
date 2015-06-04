@@ -57,7 +57,7 @@ crops['convert']["magicalcrops:magicalcrops_SoulCropSlime"] = {}
 
 crops['convert']["minecraft:wheat"]['seed'] = "minecraft:wheat_seeds"
 crops['convert']["magicalcrops:magicalcrops_MagicCropCoal"]['seed'] = "magicalcrops:magicalcrops_MagicSeedsCoal"
-crops['convert']["magicalcrops:magicalcrops_ModMagicCropCopper"]['seeds'] = "magicalcrops:magicalcrops_ModMagicSeedsCopper"
+crops['convert']["magicalcrops:magicalcrops_ModMagicCropCopper"]['seed'] = "magicalcrops:magicalcrops_ModMagicSeedsCopper"
 crops['convert']["magicalcrops:magicalcrops_MagicCropDiamond"]['seed'] = "magicalcrops:magicalcrops_MagicSeedsDiamond"
 crops['convert']["magicalcrops:magicalcrops_MagicCropEnder"]['seed'] = "magicalcrops:magicalcrops_MagicSeedsEnder"
 crops['convert']["magicalcrops:magicalcrops_MagicCropGlowstone"]['seed'] = "magicalcrops:magicalcrops_MagicSeedsGlowstone"
@@ -67,7 +67,7 @@ crops['convert']["magicalcrops:magicalcrops_MagicCropLapis"]['seed'] = "magicalc
 crops['convert']["magicalcrops:magicalcrops_MagicCropNether"]['seed'] = "magicalcrops:magicalcrops_MagicSeedsNether"
 crops['convert']["magicalcrops:magicalcrops_MagicCropRedstone"]['seed'] = "magicalcrops:magicalcrops_MagicSeedsRedstone"
 crops['convert']["magicalcrops:magicalcrops_ModMagicCropRubber"]['seed'] = "magicalcrops:magicalcrops_ModMagicSeedsRubber"
-crops['convert']["magicalcrops:magicalcrops_ModMagicCropTin"]['seeds'] = "magicalcrops:magicalcrops_ModMagicSeedsTin"
+crops['convert']["magicalcrops:magicalcrops_ModMagicCropTin"]['seed'] = "magicalcrops:magicalcrops_ModMagicSeedsTin"
 crops['convert']["magicalcrops:magicalcrops_MagicCropObsidian"]['seed'] = "magicalcrops:magicalcrops_MagicSeedsObsidian"
 crops['convert']["magicalcrops:magicalcrops_ModMagicCropUranium"]['seed'] = "magicalcrops:magicalcrops_ModMagicSeedsUranium"
 crops['convert']["magicalcrops:magicalcrops_ModMagicCropQuartz"]['seed'] = "magicalcrops:magicalcrops_ModMagicSeedsQuartz"
