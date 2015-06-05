@@ -52,7 +52,8 @@ crops['convert']["magicalcrops:magicalcrops_ElementCropWater"] = {}
 crops['convert']["magicalcrops:magicalcrops_MagicCropEssence"] = {}
 crops['convert']["magicalcrops:magicalcrops_SoulCropGhast"] = {}
 crops['convert']["magicalcrops:magicalcrops_SoulCropSlime"] = {}
-
+crops['convert']["magicalcrops:magicalcrops_ModMagicCropSilver"] = {}
+crops['convert']["magicalcrops:magicalcrops_SoulCropSpider"] = {}
  
 
 crops['convert']["minecraft:wheat"]['seed'] = "minecraft:wheat_seeds"
@@ -68,6 +69,7 @@ crops['convert']["magicalcrops:magicalcrops_MagicCropNether"]['seed'] = "magical
 crops['convert']["magicalcrops:magicalcrops_MagicCropRedstone"]['seed'] = "magicalcrops:magicalcrops_MagicSeedsRedstone"
 crops['convert']["magicalcrops:magicalcrops_ModMagicCropRubber"]['seed'] = "magicalcrops:magicalcrops_ModMagicSeedsRubber"
 crops['convert']["magicalcrops:magicalcrops_ModMagicCropTin"]['seed'] = "magicalcrops:magicalcrops_ModMagicSeedsTin"
+crops['convert']["magicalcrops:magicalcrops_ModMagicCropSilver"]['seed'] = "magicalcrops:magicalcrops_ModMagicSeedsSilver"
 crops['convert']["magicalcrops:magicalcrops_MagicCropObsidian"]['seed'] = "magicalcrops:magicalcrops_MagicSeedsObsidian"
 crops['convert']["magicalcrops:magicalcrops_ModMagicCropUranium"]['seed'] = "magicalcrops:magicalcrops_ModMagicSeedsUranium"
 crops['convert']["magicalcrops:magicalcrops_ModMagicCropQuartz"]['seed'] = "magicalcrops:magicalcrops_ModMagicSeedsQuartz"
@@ -76,6 +78,7 @@ crops['convert']["magicalcrops:magicalcrops_ElementCropWater"]['seed'] = "magica
 crops['convert']["magicalcrops:magicalcrops_MagicCropEssence"]['seed'] = "magicalcrops:magicalcrops_MagicSeedsEssence"
 crops['convert']["magicalcrops:magicalcrops_SoulCropGhast"]['seed'] = "magicalcrops:magicalcrops_SoulSeedsGhast"
 crops['convert']["magicalcrops:magicalcrops_SoulCropSlime"]['seed'] = "magicalcrops:magicalcrops_SoulSeedsSlime"
+crops['convert']["magicalcrops:magicalcrops_SoulCropSpider"]['seed'] = "magicalcrops:magicalcrops_SoulSeedsSpider"
 
 crops['convert']["minecraft:wheat"]['damage'] = 0
 crops['convert']["magicalcrops:magicalcrops_MagicCropCoal"]['damage'] = 11
@@ -98,6 +101,8 @@ crops['convert']["magicalcrops:magicalcrops_MagicCropEssence"]['damage'] = 7
 crops['convert']["magicalcrops:magicalcrops_MagicCropObsidian"]['damage'] = 7
 crops['convert']["magicalcrops:magicalcrops_SoulCropGhast"]['damage'] = 6
 crops['convert']["magicalcrops:magicalcrops_SoulCropSlime"]['damage'] = 7
+crops['convert']["magicalcrops:magicalcrops_SoulCropSpider"]['damage'] = 7
+crops['convert']["magicalcrops:magicalcrops_ModMagicCropSilver"]['damage'] = 7
 
 crops['convert']["minecraft:wheat"]['name'] = "minecraft:wheat"
 crops['convert']["magicalcrops:magicalcrops_MagicCropCoal"]['name'] = "magicalcrops:magicalcrops_MagicCropCoal"
