@@ -1,6 +1,7 @@
 <h4>Getting Started</h4>
 <p>Right click your turtle<br>
 Take the following lines and copy paste them into the turtle one by one then press enter<br></p>
+
 ```lua
 lua
 fs.makeDir("/fermis-cc")
@@ -12,6 +13,7 @@ bootstrap.close()
 exit()
 fermis-cc/bootstrap
 ```
+
 What the bootstrap does
 
 The bootstrap will grab any and all of the lua files I have in GitHub and will put them on your turtle in the fermis-cc directory
