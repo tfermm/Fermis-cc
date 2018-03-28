@@ -28,7 +28,7 @@ fermis-cc/harvester
 
 <h6>Description</h6>
 This lua script is ment to hover over crops and patroll a field.
-When a crop is grown it will break it and replace it.
+When a crop is grown it will break it and replant it.
 
 <h4>Supported seeds</h4>
 
@@ -49,11 +49,12 @@ When a crop is grown it will break it and replace it.
 	<li>Earth</li>
 	<li>Water</li>
 	<li>Ghast Soul</li>
+	<li>Essence</li>
 </ul>
 
 <h5>Minecraft Crops</h5>
 <ul>
-<li>Wheat</li>
+	<li>Wheat</li>
 </ul>
 
 <h4>TODO:</h4>
