@@ -17,4 +17,9 @@ harvester.write(harvesterConnection.readAll())
 harvesterConnection.close()
 harvester.close()
 
+2x2crafter = fs.open("/fermis-cc/2x2crafter", "w")
+2x2crafterConnection = http.get("https://raw.githubusercontent.com/tfermm/Fermis-cc/master/2x2crafter.lua")
 
+2x2crafter.write(2x2crafterConnection.readAll())
+2x2crafterConnection.close()
+2x2crafter.close()
