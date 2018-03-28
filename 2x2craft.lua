@@ -15,6 +15,14 @@ function save_recipe()
 	end
 end
 
+function isEmpty(a)
+	if (a == nil or a == '') then
+		return true
+	else
+		return false
+	end
+end
+
 function in_recipe(i)
 		data = turtle.getItemDetail(i)
 		if not isEmpty(data) then
