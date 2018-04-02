@@ -71,3 +71,24 @@ When a crop is grown it will break it and replant it.
 </ul>
 <h4>Known bugs</h4>
 Currently no known bugs
+
+
+<h5>crafter</h5>
+
+To run the harvester right click your turtle and type in the following
+
+```lua
+fermis-cc/crafter
+```
+
+<h6>Description</h6>
+This is a script for taking in a single stack or partial stack of
+one type of item from a chest below and crafting them in a 
+2x2 pattern and ejecting the crafted contents into a chest above.
+
+<h4>TODO:</h4>
+<ul>
+	<li>Allow multi item crafting recipes</li>
+</ul>
+<h4>Known bugs</h4>
+Currently no known bugs
